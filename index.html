@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Villa de Treesna — Retreat alami di Situgunung, Gede Pangrango, Sukabumi. Cocok untuk gathering kantor & liburan keluarga. 5 villa, kapasitas hingga 94 orang.">
+  <meta name="keywords" content="villa situgunung, sewa villa sukabumi, villa gathering, villa keluarga, retreat kantor, villa de treesna, penginapan gede pangrango">
+  <meta property="og:title" content="Villa de Treesna — Retreat Alami di Situgunung">
+  <meta property="og:description" content="Ruang bernapas untuk tim & keluarga, di pelukan alam Situgunung. 5 villa tersedia.">
+  <meta property="og:type" content="website">
+  <title>Villa de Treesna — Retreat Alami di Situgunung</title>
+
+  <!-- Google Fonts: Playfair Display (heading) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="nav-brand">
+        <span class="nav-brand-villa">Villa de</span>
+        <span class="nav-brand-name">Treesna</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#villa">Villa</a></li>
+        <li><a href="#gathering">Gathering</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="https://wa.me/085798209848?text=Halo%20Villa%20de%20Treesna!%20Saya%20ingin%20tanya%20tentang%20ketersediaan%20villa." class="nav-cta">Booking Sekarang</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       VIEWPORT 1 — HERO
+       "Ini tempat apa? Bagus nggak?"
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="hero-location">Situgunung · Gede Pangrango · Sukabumi</p>
+      <h1 class="hero-title">Villa de Treesna</h1>
+      <p class="hero-tagline">Ruang bernapas untuk tim & keluarga,<br>di pelukan alam Situgunung.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/085798209848?text=Halo%20Villa%20de%20Treesna!%20Saya%20ingin%20booking%20villa." class="btn btn-primary">Booking Sekarang</a>
+        <a href="#villa" class="btn btn-outline">Lihat Villa</a>
+      </div>
+    </div>
+    <!-- Ganti background-image di CSS dengan foto hero terbaik -->
+  </section>
+
+  <!-- ============================================
+       VIEWPORT 2 — TRUST BUILDER
+       "Bisa dipercaya nggak? Ini profesional?"
+       ============================================ -->
+  <section class="tentang" id="tentang">
+    <div class="container">
+      <div class="metrics-row">
+        <div class="metric-card" data-animate>
+          <span class="metric-number">5</span>
+          <span class="metric-label">Villa Tersedia</span>
+        </div>
+        <div class="metric-card" data-animate>
+          <span class="metric-number">94</span>
+          <span class="metric-label">Kapasitas Total</span>
+        </div>
+        <div class="metric-card" data-animate>
+          <span class="metric-number">850</span>
+          <span class="metric-label">Mdpl Ketinggian</span>
+        </div>
+      </div>
+      <div class="tentang-text" data-animate>
+        <h2>Retreat Alami di Kaki Gede Pangrango</h2>
+        <p>Villa de Treesna menawarkan pengalaman menginap di tengah hijaunya kawasan Situgunung, Sukabumi — jauh dari kebisingan kota, dikelilingi udara sejuk pegunungan. Cocok untuk gathering kantor, retreat tim, maupun liburan keluarga yang ingin kembali ke alam.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VIEWPORT 3 — VILLA COLLECTION
+       "Villa mana yang cocok untuk saya?"
+       ============================================ -->
+  <section class="villa-section" id="villa">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <p class="section-subtitle">Pilihan Villa</p>
+        <h2 class="section-title">Temukan Villa yang Tepat</h2>
+      </div>
+
+      <div class="villa-grid">
+
+        <!-- VILLA 1 -->
+        <div class="villa-card" data-animate>
+          <div class="villa-card-image">
+            <!-- Ganti src dengan foto crop dari brosur -->
+            <img src="assets/images/villa1.jpg" alt="Villa Treesna 1 — Villa bernuansa bata klasik dengan taman" loading="lazy">
+            <span class="villa-card-badge badge-family">Keluarga</span>
+          </div>
+          <div class="villa-card-body">
+            <div class="villa-card-header">
+              <h3>Villa Treesna 1</h3>
+              <p class="villa-price">IDR 1.500.000<span>/malam</span></p>
+            </div>
+            <div class="villa-card-specs">
+              <span class="spec-item">2 Kamar + 1 Extra Bed</span>
+              <span class="spec-item">1 Kamar Mandi</span>
+              <span class="spec-item">Maks 10 Orang</span>
+            </div>
+            <button class="villa-detail-toggle" onclick="toggleDetail(this)">Lihat Fasilitas</button>
+            <div class="villa-detail-expand">
+              <ul>
+                <li>1 Dapur + Peralatan Masak</li>
+                <li>1 Kamar Mandi + Air Panas</li>
+                <li>1 Unit Televisi</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/085798209848?text=Halo!%20Saya%20tertarik%20dengan%20Villa%20Treesna%201%20(IDR%201.500.000).%20Apakah%20tersedia?" class="btn btn-villa-cta">Tanya Ketersediaan</a>
+          </div>
+        </div>
+
+        <!-- VILLA 2 -->
+        <div class="villa-card" data-animate>
+          <div class="villa-card-image">
+            <img src="assets/images/villa2.jpg" alt="Villa Treesna 2 — Villa 2 lantai modern dengan balkon" loading="lazy">
+            <span class="villa-card-badge badge-gathering">Gathering</span>
+          </div>
+          <div class="villa-card-body">
+            <div class="villa-card-header">
+              <h3>Villa Treesna 2</h3>
+              <p class="villa-price">IDR 3.500.000<span>/malam</span></p>
+            </div>
+            <div class="villa-card-specs">
+              <span class="spec-item">5 Kamar + 2 Extra Bed</span>
+              <span class="spec-item">2 Kamar Mandi</span>
+              <span class="spec-item">Maks 24 Orang</span>
+            </div>
+            <button class="villa-detail-toggle" onclick="toggleDetail(this)">Lihat Fasilitas</button>
+            <div class="villa-detail-expand">
+              <ul>
+                <li>2 Lantai + 1 Balkon</li>
+                <li>2 Kamar Mandi + Air Panas</li>
+                <li>1 Dapur + Peralatan Masak</li>
+                <li>2 Unit Televisi</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/085798209848?text=Halo!%20Saya%20tertarik%20dengan%20Villa%20Treesna%202%20(IDR%203.500.000).%20Apakah%20tersedia?" class="btn btn-villa-cta">Tanya Ketersediaan</a>
+          </div>
+        </div>
+
+        <!-- VILLA 3 -->
+        <div class="villa-card" data-animate>
+          <div class="villa-card-image">
+            <img src="assets/images/villa3.jpg" alt="Villa Treesna 3 — Villa kayu besar dengan 3 teras dan ruang tamu luas" loading="lazy">
+            <span class="villa-card-badge badge-gathering">Gathering Besar</span>
+          </div>
+          <div class="villa-card-body">
+            <div class="villa-card-header">
+              <h3>Villa Treesna 3</h3>
+              <p class="villa-price">IDR 4.500.000<span>/malam</span></p>
+            </div>
+            <div class="villa-card-specs">
+              <span class="spec-item">7 Kamar + 3 Extra Bed</span>
+              <span class="spec-item">6 Kamar Mandi</span>
+              <span class="spec-item">Maks 30 Orang</span>
+            </div>
+            <button class="villa-detail-toggle" onclick="toggleDetail(this)">Lihat Fasilitas</button>
+            <div class="villa-detail-expand">
+              <ul>
+                <li>3 Teras</li>
+                <li>6 Kamar Mandi + Air Panas</li>
+                <li>3 Dapur + Peralatan Masak</li>
+                <li>3 Unit Televisi</li>
+                <li>Ruang Tamu 16 x 6 meter</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/085798209848?text=Halo!%20Saya%20tertarik%20dengan%20Villa%20Treesna%203%20(IDR%204.500.000).%20Apakah%20tersedia?" class="btn btn-villa-cta">Tanya Ketersediaan</a>
+          </div>
+        </div>
+
+        <!-- VILLA 4 -->
+        <div class="villa-card" data-animate>
+          <div class="villa-card-image">
+            <img src="assets/images/villa4.jpg" alt="Villa Treesna 4 — Villa kayu di bukit dengan pemandangan alam" loading="lazy">
+            <span class="villa-card-badge badge-family">Keluarga</span>
+          </div>
+          <div class="villa-card-body">
+            <div class="villa-card-header">
+              <h3>Villa Treesna 4</h3>
+              <p class="villa-price">IDR 1.500.000<span>/malam</span></p>
+            </div>
+            <div class="villa-card-specs">
+              <span class="spec-item">2 Kamar + 1 Extra Bed</span>
+              <span class="spec-item">1 Kamar Mandi</span>
+              <span class="spec-item">Maks 10 Orang</span>
+            </div>
+            <button class="villa-detail-toggle" onclick="toggleDetail(this)">Lihat Fasilitas</button>
+            <div class="villa-detail-expand">
+              <ul>
+                <li>1 Kamar Mandi + Air Panas</li>
+                <li>1 Dapur + Peralatan Masak</li>
+                <li>1 Unit Televisi</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/085798209848?text=Halo!%20Saya%20tertarik%20dengan%20Villa%20Treesna%204%20(IDR%201.500.000).%20Apakah%20tersedia?" class="btn btn-villa-cta">Tanya Ketersediaan</a>
+          </div>
+        </div>
+
+        <!-- VILLA 5 -->
+        <div class="villa-card" data-animate>
+          <div class="villa-card-image">
+            <img src="assets/images/villa5.jpg" alt="Villa Treesna 5 — Villa teduh dengan ruang keluarga luas" loading="lazy">
+            <span class="villa-card-badge badge-both">Keluarga & Gathering</span>
+          </div>
+          <div class="villa-card-body">
+            <div class="villa-card-header">
+              <h3>Villa Treesna 5</h3>
+              <p class="villa-price">IDR 2.500.000<span>/malam</span></p>
+            </div>
+            <div class="villa-card-specs">
+              <span class="spec-item">4 Kamar + 2 Extra Bed</span>
+              <span class="spec-item">2 Kamar Mandi</span>
+              <span class="spec-item">Maks 20 Orang</span>
+            </div>
+            <button class="villa-detail-toggle" onclick="toggleDetail(this)">Lihat Fasilitas</button>
+            <div class="villa-detail-expand">
+              <ul>
+                <li>2 Teras</li>
+                <li>2 Kamar Mandi + Air Panas</li>
+                <li>2 Dapur + Peralatan Masak</li>
+                <li>2 Unit Televisi</li>
+                <li>Ruang Keluarga 10 x 3 meter</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/085798209848?text=Halo!%20Saya%20tertarik%20dengan%20Villa%20Treesna%205%20(IDR%202.500.000).%20Apakah%20tersedia?" class="btn btn-villa-cta">Tanya Ketersediaan</a>
+          </div>
+        </div>
+        <!-- VILLA 6 — SPECIAL FAMILY CARD -->
+        <div class="villa-card" data-animate>
+          <div class="villa-card-image">
+            <img src="assets/images/villa6.jpg" alt="Cucu Almarhum Pak Otoh" loading="lazy">
+            <span class="villa-card-badge" style="background: rgba(196, 148, 58, 0.95); color: #fff;">VIP Keluarga</span>
+          </div>
+          <div class="villa-card-body">
+            <div class="villa-card-header">
+              <h3>Cucu Alm. Pak Otoh</h3>
+              <p class="villa-price" style="color: var(--forest);">Rp 0,00<span> / malam</span></p>
+            </div>
+            <div class="villa-card-specs">
+              <span class="spec-item">Villa Bebas Dipilih</span>
+              <span class="spec-item">Kapasitas Unlimited</span>
+              <span class="spec-item">Maks ∞ Orang</span>
+            </div>
+            <button class="villa-detail-toggle" onclick="toggleDetail(this)">Lihat Fasilitas</button>
+            <div class="villa-detail-expand">
+              <ul>
+                <li>Seluruh Villa 1-5 bebas dipilih</li>
+                <li>Dapur boleh dipakai sesuka hati</li>
+                <li>Check-in & check-out semaunya</li>
+                <li>Syarat: buktikan silsilah keluarga</li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-villa-cta" style="background: var(--gold); pointer-events: none;">Otomatis Terbooking</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VIEWPORT 4 — GATHERING PACKAGE
+       "Kalau rombongan 50 orang, gimana?"
+       ============================================ -->
+  <section class="gathering-section" id="gathering">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <p class="section-subtitle">Paket Rombongan</p>
+        <h2 class="section-title">Gathering & Retreat?<br>Kami Siapkan Semuanya.</h2>
+        <p class="section-desc">Tidak perlu bingung hitung sendiri. Pilih skenario yang sesuai jumlah tim Anda, lalu langsung hubungi kami untuk atur semuanya.</p>
+      </div>
+
+      <div class="gathering-grid">
+
+        <div class="gathering-card" data-animate>
+          <div class="gathering-card-size">~20 orang</div>
+          <h3>Retreat Tim Kecil</h3>
+          <div class="gathering-combo">
+            <span class="combo-villa">Villa 5</span>
+            <span class="combo-capacity">Kapasitas 20 orang</span>
+          </div>
+          <div class="gathering-price">
+            <span class="price-est">Est. IDR 2.500.000</span>
+            <span class="price-note">/malam</span>
+          </div>
+          <a href="https://wa.me/085798209848?text=Halo!%20Saya%20ingin%20booking%20paket%20gathering%20untuk%20~20%20orang.%20Bisa%20info%20lebih%20lanjut?" class="btn btn-gathering-cta">Konsultasi Paket Ini</a>
+        </div>
+
+        <div class="gathering-card gathering-card-featured" data-animate>
+          <div class="gathering-featured-label">Paling Populer</div>
+          <div class="gathering-card-size">~44 orang</div>
+          <h3>Gathering Kantor</h3>
+          <div class="gathering-combo">
+            <span class="combo-villa">Villa 5 + Villa 2</span>
+            <span class="combo-capacity">Kapasitas 20 + 24 orang</span>
+          </div>
+          <div class="gathering-price">
+            <span class="price-est">Est. IDR 6.000.000</span>
+            <span class="price-note">/malam</span>
+          </div>
+          <a href="https://wa.me/085798209848?text=Halo!%20Saya%20ingin%20booking%20paket%20gathering%20untuk%20~44%20orang%20(Villa%205%20%2B%20Villa%202).%20Bisa%20info%20lebih%20lanjut?" class="btn btn-gathering-cta">Konsultasi Paket Ini</a>
+        </div>
+
+        <div class="gathering-card" data-animate>
+          <div class="gathering-card-size">~64 orang</div>
+          <h3>Outing Besar</h3>
+          <div class="gathering-combo">
+            <span class="combo-villa">Villa 2 + Villa 3 + Villa 1</span>
+            <span class="combo-capacity">Kapasitas 24 + 30 + 10 orang</span>
+          </div>
+          <div class="gathering-price">
+            <span class="price-est">Est. IDR 9.500.000</span>
+            <span class="price-note">/malam</span>
+          </div>
+          <a href="https://wa.me/085798209848?text=Halo!%20Saya%20ingin%20booking%20paket%20gathering%20untuk%20~64%20orang%20(Villa%202%20%2B%20Villa%203%20%2B%20Villa%201).%20Bisa%20info%20lebih%20lanjut?" class="btn btn-gathering-cta">Konsultasi Paket Ini</a>
+        </div>
+
+      </div>
+
+      <p class="gathering-note" data-animate>Jumlah peserta lebih dari 64 orang? Seluruh 5 villa bisa disewa sekaligus. <a href="https://wa.me/6281234567890?text=Halo!%20Saya%20ingin%20booking%20seluruh%205%20villa%20untuk%20rombongan%20besar.%20Bisa%20info?">Hubungi kami</a> untuk paket khusus.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VIEWPORT 5 — LOKASI & PENUTUP
+       "Dimana lokasinya? Gimana caranya ke sana?"
+       ============================================ -->
+  <section class="lokasi-section" id="lokasi">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <p class="section-subtitle">Lokasi</p>
+        <h2 class="section-title">Cara Menuju Villa de Treesna</h2>
+      </div>
+
+      <div class="lokasi-grid" data-animate>
+        <div class="lokasi-map">
+          <!-- Ganti src iframe dengan embed Google Maps yang benar -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.0!2d106.93!3d-6.82!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSitugunung%2C+Kadudampit%2C+Sukabumi!5e0!3m2!1sid!2sid!4v1"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi Villa de Treesna di Google Maps">
+          </iframe>
+        </div>
+        <div class="lokasi-info">
+          <div class="lokasi-address">
+            <h3>Villa de Treesna</h3>
+            <p>Situgunung, Gede Pangrango,<br>Kec. Kadudampit, Kabupaten Sukabumi,<br>Jawa Barat 43153</p>
+          </div>
+          <div class="lokasi-routes">
+            <div class="route-item">
+              <span class="route-icon">&#9737;</span>
+              <div>
+                <strong>Dari Jakarta</strong>
+                <p>± 3 jam via Tol Bocimi</p>
+              </div>
+            </div>
+            <div class="route-item">
+              <span class="route-icon">&#9737;</span>
+              <div>
+                <strong>Dari Bandung</strong>
+                <p>± 4 jam via Nagrek — Sukabumi</p>
+              </div>
+            </div>
+            <div class="route-item">
+              <span class="route-icon">&#9737;</span>
+              <div>
+                <strong>Dari Bogor</strong>
+                <p>± 2 jam via Cicurug</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA FINAL + FOOTER
+       ============================================ -->
+  <section class="cta-final">
+    <div class="container">
+      <h2 data-animate>Siap Merencanakan Retreat<br>yang Tak Terlupakan?</h2>
+      <p data-animate>Hubungi kami via WhatsApp — konsultasi gratis, tanpa komitmen.</p>
+      <a href="https://wa.me/085798209848?text=Halo%20Villa%20de%20Treesna!%20Saya%20ingin%20tanya%20tentang%20ketersediaan%20villa." class="btn btn-primary btn-lg" data-animate>Chat WhatsApp Sekarang</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-villa">Villa de</span>
+        <span class="footer-brand-name">Treesna</span>
+        <p>Retreat alami di Situgunung</p>
+      </div>
+      <div class="footer-links">
+        <h4>Villa</h4>
+        <ul>
+          <li><a href="#villa">Lihat Semua Villa</a></li>
+          <li><a href="#gathering">Paket Gathering</a></li>
+          <li><a href="#lokasi">Lokasi & Arah</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="https://wa.me/085798209848">0812-3456-7890</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">@villadetreesna</a></li>
+          <li><a href="#lokasi">Sukabumi, Jawa Barat</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Villa de Treesna &middot; All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       STICKY WHATSAPP FAB
+       ============================================ -->
+  <a href="https://wa.me/085798209848?text=Halo%20Villa%20de%20Treesna!%20Saya%20ingin%20tanya%20tentang%20ketersediaan%20villa."
+     class="wa-fab"
+     aria-label="Chat WhatsApp"
+     target="_blank"
+     rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
